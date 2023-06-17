@@ -3,6 +3,7 @@ import {
   Flex,
   Button,
   Text,
+  Box,
   VStack,
   useBreakpointValue,
 } from "@chakra-ui/react";
@@ -12,9 +13,7 @@ export default function HeroWithBackgroundImage() {
     <Flex
       w={"full"}
       h={"100vh"}
-      backgroundImage={
-        "url(https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)"
-      }
+      backgroundImage={`url('/images/worship-img0.jpg')`}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
@@ -24,25 +23,39 @@ export default function HeroWithBackgroundImage() {
         px={useBreakpointValue({ base: 4, md: 8 })}
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
-        <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
+        <Stack
+          maxW={"4xl"}
+          align={"flex-start"}
+                  spacing={6}
+                  p={10}
+                  borderRadius={'20px'}
+          bg="rgba(0, 0, 0, 0.1)"
+          backdropFilter="blur(2px)"
+        >
           <Text
             color={"white"}
-            fontWeight={600}
+            fontWeight={700}
             lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+            letterSpacing={"0px"}
+            textTransform={"uppercase"}
+            fontSize={useBreakpointValue({ base: "3xl", md: "7xl" })}
           >
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-            eiusmod tempor
+            Solid Rock Church
           </Text>
           <Text
             color={"white"}
-            fontWeight={400}
-            lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "1xl", md: "2xl" })}
+            fontSize={useBreakpointValue({ base: "1xl", md: "20px" })}
           >
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-            eiusmod tempor Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto vero esse perferendis tenetur, optio at obcaecati ea eum autem nisi suscipit voluptatem, exercitationem architecto dignissimos itaque accusamus? Ad, aut.
+            We are a multicultural & multigenerational Church in Drogheda,
+            Ireland. We believe that we are better together and want to jointly
+            impact our community with God’s Love and get a glimpse of Heaven
+            here on Earth in our lifetime. We invite you to join us!
           </Text>
+          <Flex>
+            <Box backgroundColor="red" width="50px" height="50px" />
+            <Box backgroundColor="green" width="50px" height="50px" />
+            <Box backgroundColor="blue" width="50px" height="50px" />
+          </Flex>
           <Stack direction={"row"}>
             <Button
               bg={"blue.400"}
