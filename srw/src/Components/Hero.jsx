@@ -13,7 +13,7 @@ export default function HeroWithBackgroundImage() {
     <Flex
       w={"full"}
       h={"100vh"}
-      backgroundImage={`url('/images/worship-img0.jpg')`}
+      backgroundImage={`url('/images/sermon-img0.jpg')`}
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
@@ -26,11 +26,7 @@ export default function HeroWithBackgroundImage() {
         <Stack
           maxW={"4xl"}
           align={"flex-start"}
-                  spacing={6}
-                  p={10}
-                  borderRadius={'20px'}
-          bg="rgba(0, 0, 0, 0.1)"
-          backdropFilter="blur(2px)"
+          spacing={6}
         >
           <Text
             color={"white"}
@@ -51,17 +47,19 @@ export default function HeroWithBackgroundImage() {
             impact our community with God’s Love and get a glimpse of Heaven
             here on Earth in our lifetime. We invite you to join us!
           </Text>
-          <Flex>
+          {/* Social Media Icons */}
+          {/* <Flex>
             <Box backgroundColor="red" width="50px" height="50px" />
             <Box backgroundColor="green" width="50px" height="50px" />
             <Box backgroundColor="blue" width="50px" height="50px" />
-          </Flex>
+          </Flex> */}
           <Stack direction={"row"}>
             <Button
-              bg={"blue.400"}
-              rounded={"full"}
+              bg="black"
+              _hover={{ bg: "gray.700" }}
+              _active={{ bg: "gray.800" }}
               color={"white"}
-              _hover={{ bg: "blue.500" }}
+              rounded={"full"}
             >
               Show me more
             </Button>
@@ -69,6 +67,7 @@ export default function HeroWithBackgroundImage() {
               bg={"whiteAlpha.300"}
               rounded={"full"}
               color={"white"}
+              boxShadow="0 0 10px rgba(0, 0, 0, 0.10)"
               _hover={{ bg: "whiteAlpha.500" }}
             >
               Show me more
