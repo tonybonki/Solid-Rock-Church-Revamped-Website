@@ -41,7 +41,7 @@ export default function HeroWithBackgroundImage() {
             fontSize={useBreakpointValue({ base: "1xl", md: "2xl" })}
           >
             Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-            eiusmod tempor
+            eiusmod tempor Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto vero esse perferendis tenetur, optio at obcaecati ea eum autem nisi suscipit voluptatem, exercitationem architecto dignissimos itaque accusamus? Ad, aut.
           </Text>
           <Stack direction={"row"}>
             <Button
